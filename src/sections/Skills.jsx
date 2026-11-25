@@ -5,24 +5,34 @@ import FadeInView from '../components/FadeInView'
 
 const skillCategories = [
   {
+    category: 'Languages',
+    icon: '💻',
+    skills: ['TypeScript', 'JavaScript', 'Python', 'SQL'],
+  },
+  {
     category: 'Frontend',
     icon: '🎨',
-    skills: ['React.js', 'JavaScript', 'TypeScript', 'HTML5 & CSS3', 'Tailwind CSS', 'REST API Integration'],
+    skills: ['React.js', 'Redux Toolkit', 'Next.js', 'Tailwind CSS', 'HTML', 'CSS'],
   },
   {
     category: 'Backend',
     icon: '⚙️',
-    skills: ['Node.js', 'Express.js', 'MongoDB'],
+    skills: ['Node.js', 'Express.js', 'REST APIs', 'WebSockets'],
   },
   {
-    category: 'Data Analytics',
-    icon: '📊',
-    skills: ['Python', 'Pandas', 'NumPy', 'Power BI', 'Jupyter Notebook', 'EDA & Data Visualization', 'SQL'],
+    category: 'Databases',
+    icon: '🗄️',
+    skills: ['MongoDB', 'MySQL'],
   },
   {
-    category: 'Tools & DevOps',
+    category: 'AI',
+    icon: '🤖',
+    skills: ['Google Gemini API Integration', 'RAG', 'Prompt Engineering'],
+  },
+  {
+    category: 'Tools & Version Control',
     icon: '🛠️',
-    skills: ['Git & GitHub', 'VS Code', 'Postman'],
+    skills: ['Git', 'GitHub', 'Postman', 'Confluence', 'JIRA', 'Docker'],
   },
 ]
 
@@ -33,11 +43,11 @@ export default function Skills() {
         <SectionHeading
           eyebrow="Skills"
           title="What I Work With"
-          subtitle="Technologies and tools I use to build products and derive data insights."
+          subtitle="Technologies and tools I use to build fast, reliable web products."
         />
       </FadeInView>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {skillCategories.map((cat, i) => (
           <motion.div
             key={cat.category}

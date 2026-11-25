@@ -4,10 +4,10 @@ import SectionHeading from '../components/SectionHeading'
 import FadeInView from '../components/FadeInView'
 
 const stats = [
-  { value: '3+', label: 'Projects Built' },
-  { value: '98%', label: 'ML Model Accuracy' },
-  { value: '7.57', label: 'B.Tech CGPA' },
-  { value: '10+', label: 'Technologies' },
+  { value: '3+', label: 'Full-Stack Projects' },
+  { value: '1', label: 'Internship' },
+  { value: '7.61', label: 'B.Tech CGPA' },
+  { value: '20+', label: 'Technologies' },
 ]
 
 export default function About() {
@@ -57,14 +57,14 @@ export default function About() {
         <FadeInView direction="left" delay={0.1}>
           <div className="flex flex-col gap-6">
             <p className="text-slate-400 leading-relaxed">
-              👋 Hey! I'm <span className="text-white font-medium">Priyansh Saxena</span> — a React Developer
-              & Data Analytics Enthusiast based in <span className="text-white font-medium">Bareilly, India</span>.
-             I’m a recent Computer Science graduate from Dr. APJ Abdul Kalam Technical University, Lucknow.
+              👋 Hey! I'm <span className="text-white font-medium">Priyansh Saxena</span> — a full-stack developer
+              and Computer Science graduate (B.Tech CSE, 2026) from Shri Ram Murti Smarak College of Engineering &amp; Technology,
+              Dr. APJ Abdul Kalam Technical University, Lucknow.
             </p>
             <p className="text-slate-400 leading-relaxed">
-              I specialise in building responsive, performant web applications with React.js and full-stack
-              technologies, while also leveraging Python, SQL, and Power BI to turn raw data into actionable business insights.
-              I love the intersection of clean code and intelligent data.
+              I build and ship end-to-end web apps with React, Node.js and MongoDB — from real-time features
+              with Socket.IO to AI integrations using the Gemini API and RAG. My SQL and Python experience from a
+              data analytics internship helps me design solid, data-aware backends.
             </p>
 
             {/* Stats */}
