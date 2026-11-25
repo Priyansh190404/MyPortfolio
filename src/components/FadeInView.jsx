@@ -11,6 +11,7 @@ export default function FadeInView({
   direction = 'up', // 'up' | 'down' | 'left' | 'right' | 'none'
   duration = 0.6,
 }) {
+  
   const variants = {
     hidden: {
       opacity: 0,
