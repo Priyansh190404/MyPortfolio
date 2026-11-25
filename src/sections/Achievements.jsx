@@ -5,25 +5,25 @@ import FadeInView from '../components/FadeInView'
 
 const achievements = [
   {
+    icon: '🎓',
+    title: 'Academic Excellence Scholarship',
+    description: 'Awarded a ₹20,000 academic excellence scholarship during B.Tech.',
+    badge: '₹20,000 Scholarship',
+    badgeColor: 'bg-green-500/10 text-green-400 border-green-500/20',
+  },
+  {
     icon: '🏆',
-    title: 'National Level Technical Fest — 3rd Position',
-    description: 'Secured 3rd position in a National Level Technical Fest organised at SRMSCET, Bareilly.',
+    title: 'National-Level Tech Fest — 3rd Place',
+    description: 'Secured 3rd place in a national-level technical fest at SRMSCET.',
     badge: '3rd Place',
     badgeColor: 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20',
   },
   {
     icon: '🎯',
-    title: 'Technical Quiz — 3rd Position',
-    description: 'Secured 3rd position in a Technical Quiz organised at SRMSCETR, Bareilly.',
+    title: 'Tech Quiz — 3rd Place',
+    description: 'Secured 3rd place in a national-level technical quiz at SRMSCET.',
     badge: '3rd Place',
     badgeColor: 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20',
-  },
-  {
-    icon: '🎓',
-    title: 'Academic Excellence Scholarship',
-    description: 'Received a scholarship worth ₹20,000 in B.Tech for outstanding academic performance.',
-    badge: '₹20,000 Scholarship',
-    badgeColor: 'bg-green-500/10 text-green-400 border-green-500/20',
   },
 ]
 

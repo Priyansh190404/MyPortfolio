@@ -62,7 +62,7 @@ export default function Hero() {
           variants={item}
           className="text-xl md:text-2xl text-slate-400 font-medium mb-6"
         >
-          React Developer · Data Analytics Enthusiast · CSE Student
+          Full-Stack Developer · React · Node.js · AI Integrations
         </motion.p>
 
         {/* Bio */}
@@ -70,8 +70,8 @@ export default function Hero() {
           variants={item}
           className="text-slate-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-10"
         >
-          Building responsive web applications and turning raw data into actionable insights.
-          Actively seeking roles in <span className="text-violet-400">React development</span> or <span className="text-violet-400">data analytics</span>.
+          I build and ship end-to-end web apps — from real-time features with Socket.IO to AI integrations with Gemini and RAG.
+          Actively seeking roles in <span className="text-violet-400">full-stack</span> and <span className="text-violet-400">React development</span>.
         </motion.p>
 
         {/* CTA Buttons */}

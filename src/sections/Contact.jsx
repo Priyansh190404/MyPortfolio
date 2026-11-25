@@ -82,7 +82,7 @@ export default function Contact() {
         <SectionHeading
           eyebrow="Contact"
           title="I'm Available for Hire"
-          subtitle="Looking for a React Developer or Data Analytics role? Let's talk — I'd love to be part of your team."
+          subtitle="Looking for a Full-Stack or React Developer? Let's talk — I'd love to be part of your team."
         />
       </FadeInView>
 
@@ -92,8 +92,8 @@ export default function Contact() {
           <div className="flex flex-col gap-8">
             <p className="text-slate-400 leading-relaxed">
               I'm actively looking for full-time, internship, or freelance opportunities in
-              <span className="text-white font-medium"> React development</span> or
-              <span className="text-white font-medium"> data analytics</span>.
+              <span className="text-white font-medium"> full-stack</span> and
+              <span className="text-white font-medium"> React development</span>.
               If you think I'd be a good fit for your team, I'd love to hear from you — drop a message and I'll get back to you promptly.
             </p>
 
