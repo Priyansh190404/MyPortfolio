@@ -5,36 +5,47 @@ import FadeInView from '../components/FadeInView'
 
 const projects = [
   {
-    title: 'Early Prediction of Diabetes & Preventive System',
+    title: 'TaskFlow – AI-Powered Project Management Platform',
     description:
-      'Developed a full-stack healthcare web application for early diabetes risk prediction using Machine Learning. Implemented a Random Forest model with 98% accuracy that categorises patients into Low, Medium, and High-risk levels with personalised preventive recommendations.',
-    tags: ['React.js', 'Node.js', 'MongoDB', 'Python', 'Machine Learning', 'Random Forest'],
-    status: 'Completed',
-    demoUrl: '#',
-    codeUrl: 'https://github.com/Priyansh190404/Diabetes-Prediction',
+      'Built and deployed a full-stack project management platform with task CRUD, priorities, scheduling, progress tracking, secure authentication and ownership-based access control. Integrated Google Gemini with RAG over project documents for AI-assisted planning, automated task generation and task breakdown, plus hierarchical tasks and dependencies with circular-dependency detection, bulk task management and insights dashboards.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Google Gemini', 'RAG', 'Vercel'],
+    status: 'Live',
+    demoUrl: 'https://project-management-1ge6-6k984hsg5-ps-32fc.vercel.app/sign-in',
+    codeUrl: 'https://github.com/Priyansh190404/Project-Management',
     featured: true,
-    highlight: '98% ML Accuracy',
+    highlight: 'AI + RAG',
   },
   {
-    title: 'OLA Sales Data Analysis',
+    title: 'Early Diabetes Risk Prediction (ML Web App)',
     description:
-      'Analysed OLA ride-booking sales data using SQL and Python (Jupyter Notebook) to uncover revenue trends and customer insights. Built interactive dashboards in Power BI for business reporting and strategic decision-making.',
-    tags: ['Python', 'SQL', 'Power BI', 'Pandas', 'Jupyter Notebook', 'EDA'],
-    status: 'Completed',
-    demoUrl: '#',
-    codeUrl: 'https://github.com/Priyansh190404/Ola-Sales-Analysis',
+      'Trained and deployed a Random Forest classifier that predicts diabetes risk (Low, Medium or High) from patient health inputs, served through a live web app. Developed a preprocessing pipeline (missing-value imputation, feature scaling) and generated personalised preventive health recommendations from predictions.',
+    tags: ['Python', 'FastAPI', 'Scikit-learn', 'Random Forest'],
+    status: 'Live',
+    demoUrl: 'https://diabetes-prediction-ps-32fc.vercel.app',
+    codeUrl: 'https://github.com/Priyansh190404/Diabetes-Prediction',
     featured: true,
-    highlight: 'Power BI Dashboard',
+    highlight: 'ML Web App',
+  },
+  {
+    title: 'QuickChat – Real-Time Chat Application',
+    description:
+      'Engineered a real-time one-to-one chat with Socket.IO (WebSockets), handling bidirectional event-based messaging and live online-presence tracking across concurrent users. Built a secure REST API covering JWT-based authentication, user profile management and Cloudinary-backed image uploads.',
+    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'Cloudinary'],
+    status: 'Completed',
+    demoUrl: null,
+    codeUrl: 'https://github.com/Priyansh190404/ChatApp',
+    featured: true,
+    highlight: 'Real-Time',
   },
   {
     title: 'Memory Card Game',
     description:
-      'A fun and interactive memory card game built and deployed as a frontend project. Demonstrates React state management, component design, and smooth game logic.',
-    tags: ['React.js', 'JavaScript', 'CSS3'],
-    status: 'Completed',
-    demoUrl: '#',
-    codeUrl: 'https://github.com/Priyansh190404',
-    featured: false,
+      'A fun, interactive memory card game built and deployed as a frontend project. Built with reusable React components and a custom game-logic hook that handles card flips, matching, move tracking and a win state.',
+    tags: ['React.js', 'JavaScript', 'Vite', 'CSS3'],
+    status: 'Live',
+    demoUrl: null,
+    codeUrl: 'https://github.com/Priyansh190404/Memory-Card-Game',
+    featured: true,
     highlight: 'Deployed',
   },
 ]
@@ -94,15 +105,19 @@ function ProjectCard({ project, index }) {
 
       {/* Links */}
       <div className="flex items-center gap-4 pt-2 border-t border-[#1e1e2e]">
-        <a
-          href={project.demoUrl}
-          className="flex items-center gap-1.5 text-slate-400 hover:text-violet-300 text-xs font-medium transition-colors"
-        >
-          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-          Live Demo
-        </a>
+        {project.demoUrl && (
+          <a
+            href={project.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-slate-400 hover:text-violet-300 text-xs font-medium transition-colors"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Live Demo
+          </a>
+        )}
         <a
           href={project.codeUrl}
           target="_blank"
@@ -129,12 +144,12 @@ export default function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Things I've Built"
-          subtitle="A selection of projects showcasing my full-stack and data analytics skills."
+          subtitle="A selection of projects showcasing my full-stack development skills."
         />
       </FadeInView>
 
       {/* Featured */}
-      <div className="grid md:grid-cols-2 gap-6 mb-6">
+      <div className="grid md:grid-cols-2 gap-6">
         {featured.map((project, i) => (
           <ProjectCard key={project.title} project={project} index={i} />
         ))}

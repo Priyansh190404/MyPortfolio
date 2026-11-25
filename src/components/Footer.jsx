@@ -49,7 +49,7 @@ export default function Footer() {
               Priyansh<span className="text-violet-500">.</span>
             </a>
             <p className="text-slate-500 text-sm leading-relaxed">
-              React Developer & Data Analytics Enthusiast. Building web apps and turning data into insights.
+              Full-Stack Developer. Building end-to-end web apps with React, Node.js and AI integrations.
             </p>
             {/* Social icons */}
             <div className="flex items-center gap-3 mt-2">
